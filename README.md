@@ -30,7 +30,9 @@ or -
 reminder "Medication" {
   at: "09:00"
   message: "Take vitamin D"
+
 }
 
+With this design, users have the freedom to choose what happens instead of worrying about how all this shall be implemented, all thanks to our DSL.
 
 

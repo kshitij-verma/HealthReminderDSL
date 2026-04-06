@@ -45,6 +45,15 @@ The project has been updated from a basic parser to a state aware interpreter,
 - updated the health.tx grammar to include Medication entities. Now reminders can point to specific medication using textX's cross referencring capabilities.
 
 - implemented an interdependency check, checking the relationship between different actions. in the latest update for example , we verify that X amount of time has passed since a medication was taken before triggering a reminder
+____________________________
+
+Progress Update: April 7th 2026:
+
+The project now triggers system notification alerts.
+
+- installed plyer for notification framework
+
+-using datetime now lets the system distinguish and show SAFE or BLOCKED states based on the user history
 
 - integrated datetime logic to track when medication was last taken to allow real time constraint handling.
 

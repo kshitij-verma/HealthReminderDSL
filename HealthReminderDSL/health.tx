@@ -1,0 +1,17 @@
+HealthModel:
+    medications*=Medication
+    reminders*=Reminder;
+
+Medication:
+    'medication' name=ID;
+
+Reminder:
+    'reminder' name=STRING '{'
+        'every:' interval=INT 'min'
+        ('if:' condition=ID operator=Operator value=INT 'min')? #more complex - check pyflies arithmetic, relational logic 
+        ('after:' dependency=[Medication])? 
+        'message:' message=STRING
+    '}';
+
+Operator:
+    '>' | '<' | '==' | '>=';

@@ -59,3 +59,30 @@ The project now triggers system notification alerts.
 
 Now the dsl is two-tier structured, 
 we have global entities defining the medication and conditional reminders to support the internal logic (if) and external dependancies (after) 	
+
+_____________________________
+
+Progress Update: April 11th 2026:
+
+- Established a unit testing with pytest. This allows for Automated Verification of the Meta-model and grammar, ensuring that new features do not introduce regressions in the parser.
+
+- Migrated project configuration to a pyproject.toml file. This standardizes the build system and dependency management, replacing fragmented setup scripts with a unified, declarative configuration.
+
+- Integrated the UV tool for virtual environment syncing and reproducable builds.
+
+- With UV tools implemented here is a reminder on how to run the project:
+
+How to Run:
+Install UV: pip install uv
+
+Sync Environment: uv sync
+
+Run the Interpreter: uv run python main.py
+
+Run Tests: uv run pytest
+
+_____________________________
+
+Progress Update: April 13th 2026:
+
+- Expanded the grammar to include a Conflict entity. This allows the DSL to handle safety-critical relationships between medications (e.g., "Do not mix Aspirin with Ibuprofen").

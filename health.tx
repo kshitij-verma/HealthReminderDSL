@@ -1,0 +1,21 @@
+HealthModel:
+    medications*=Medication
+    conflicts*=Conflict
+    reminders*=Reminder;
+
+Medication:
+    'medication' name=ID;
+
+Conflict:
+    'conflict' medA=[Medication] 'with' medB=[Medication] 'message' message=STRING;
+
+Reminder:
+    'reminder' name=STRING '{'
+        'every:' interval=INT 'min'
+        ('if:' condition=ID operator=Operator value=INT 'min')? 
+        ('after:' dependency=[Medication])? 
+        'message:' message=STRING
+    '}';
+
+Operator:
+    '>' | '<' | '==' | '>=';

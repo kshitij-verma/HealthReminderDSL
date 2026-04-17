@@ -1,0 +1,20 @@
+[project]
+name = "health-reminder-dsl"
+version = "0.1.0"
+description = "A Domain Specific Language for medication and lifestyle reminders."
+authors = [
+    {name = "Kshitij Verma", email = "kshitijverma41@gmail.com"}
+]
+dependencies = [
+    "textX",
+    "plyer",
+    "pytest"
+]
+
+[tool.uv]
+managed = true
+package = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -86,3 +86,15 @@ _____________________________
 Progress Update: April 13th 2026:
 
 - Expanded the grammar to include a Conflict entity. This allows the DSL to handle safety-critical relationships between medications (e.g., "Do not mix Aspirin with Ibuprofen").
+
+___________________________
+
+Progress Update: April 17th 2026:
+
+- Developed a dedicated web application (app.py) that allows users to interact with the DSL without touching the underlying Python source code.
+
+- Integrated a "Temporal State Slider" that allows for the simulation of time-sensitive scenarios.
+
+- The UI provides immediate syntax validation feedback. The interpreter provides a clear error trace; otherwise, it confirms a "Success" state and triggers the native OS notifications.
+
+- Fulfills the core DSL goal of being accessible to "Domain Experts" (healthcare providers/users) rather than just programmers.

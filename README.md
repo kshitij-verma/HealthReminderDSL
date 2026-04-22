@@ -98,3 +98,9 @@ Progress Update: April 17th 2026:
 - The UI provides immediate syntax validation feedback. The interpreter provides a clear error trace; otherwise, it confirms a "Success" state and triggers the native OS notifications.
 
 - Fulfills the core DSL goal of being accessible to "Domain Experts" (healthcare providers/users) rather than just programmers.
+
+___________________________
+
+Progress Update: April 22nd 2026:
+
+- Added color syntax through pythons own syntax coloring

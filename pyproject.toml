@@ -10,6 +10,7 @@ dependencies = [
     "plyer",
     "pytest",
     "streamlit>=1.56.0",
+    "streamlit-code-editor>=0.1.22",
 ]
 
 [tool.uv]

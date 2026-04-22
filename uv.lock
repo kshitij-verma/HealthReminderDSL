@@ -162,6 +162,7 @@ dependencies = [
     { name = "plyer" },
     { name = "pytest" },
     { name = "streamlit" },
+    { name = "streamlit-code-editor" },
     { name = "textx" },
 ]
 
@@ -170,6 +171,7 @@ requires-dist = [
     { name = "plyer" },
     { name = "pytest" },
     { name = "streamlit", specifier = ">=1.56.0" },
+    { name = "streamlit-code-editor", specifier = ">=0.1.22" },
     { name = "textx" },
 ]
 
@@ -584,6 +586,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/03/85/7c669b3a1336d34ef39fa9760fbd343185f3b15db2ad0838fd78423d1c7f/streamlit-1.56.0.tar.gz", hash = "sha256:1176acfa89ae1318b79078e8efe689a9d02e8d58e325c00fc0e55fa2f3fe8d6a", size = 8559239, upload-time = "2026-03-31T22:29:38.59Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e4/91/cb6f13a89e376ef179309d74f37a70ea0041d5e4b5ba5c4836dbf6e020ad/streamlit-1.56.0-py3-none-any.whl", hash = "sha256:8677a335734a30a51bc57ad0ec910e365d95f7c456fc02c60032927cd0729dc5", size = 9052089, upload-time = "2026-03-31T22:29:36.342Z" },
+]
+
+[[package]]
+name = "streamlit-code-editor"
+version = "0.1.22"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "streamlit" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/67/6f/fc455957652d0f42124dbc3090fe58b8919ad5bcba575a36669499ded952/streamlit-code-editor-0.1.22.tar.gz", hash = "sha256:93e6ecb4060614bce99eaf758b4cb5c8ce2accc0eb5140cbbb23c05cb4e9d7f6", size = 3788010, upload-time = "2024-12-29T22:30:22.441Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/43/53/298050f856bfdd7dd47fbcd998af92ec47479a4c0fc1a89ff90c4f27a74a/streamlit_code_editor-0.1.22-py3-none-any.whl", hash = "sha256:31abe12a94abde64123f71049741c248cd52c9de7869decd32a8a5a96695fcf4", size = 4036058, upload-time = "2024-12-29T22:30:18.897Z" },
 ]
 
 [[package]]

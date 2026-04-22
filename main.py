@@ -16,7 +16,7 @@ def run_dsl():
         medication Ibuprofen
         medication VitaminC
 
-        conflict Aspirin with Ibuprofen message "Safety Alert: Avoid mixing different NSAID medications!"
+        conflict Aspirin with Ibuprofen within 60 min message "Safety Alert: Avoid mixing different NSAID medications!"
 
         reminder "Vitamin C" {
             every: 720 min

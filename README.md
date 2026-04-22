@@ -104,3 +104,7 @@ ___________________________
 Progress Update: April 22nd 2026:
 
 - Added color syntax through pythons own syntax coloring
+
+Final to run app.py:
+
+uv run streamlit run app.py

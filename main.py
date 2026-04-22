@@ -11,7 +11,6 @@ def run_dsl():
     try:
         meta_model = metamodel_from_file('health.tx')
         
-        # FULL SCRIPT: Restored with all your original reminders and the new conflict
         example_script = """
         medication Aspirin
         medication Ibuprofen

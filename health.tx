@@ -7,7 +7,9 @@ Medication:
     'medication' name=ID;
 
 Conflict:
-    'conflict' medA=[Medication] 'with' medB=[Medication] 'message' message=STRING;
+    'conflict' medA=[Medication] 'with' medB=[Medication] 
+    'within' time=INT 'min' 
+    'message' message=STRING;
 
 Reminder:
     'reminder' name=STRING '{'
